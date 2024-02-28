@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+}
+
+@keyframes slide-right {
+    from{
+        transform: translateX(-1000px);
+    }
+
+    to{
+        transform: translateX(0px);
+    }
+    
+}
+
+body{
+    background-image: url(background-ecouter.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+a{
+    text-decoration: none;
+    text-decoration-line: none;
+}
+
+#effet-nav-barre{
+    display: block;
+    height: 200px;
+}
+
+#nav-barre{
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#nav-barre a{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#nav-barre a:hover{
+    color: white;
+}
+
+#nav-barre h1{
+    font-size: 30px;
+    font-family: sans-serif;
+    font-style: bold;
+}
+
+#message-avertissement{
+    /*position: fixed;*/
+    width: 100%;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#message{
+    font-size: 5em;
+    font-family: serif;
+    text-align: center;
+    margin: 0px;
+    padding: 0px 15%;
+    color: beige;
+    animation: slide-right 1s;
+}
+
+@media only screen and (max-width: 900px) {
+    body{
+        background-image: url(background-ecouter-moyen.jpg);
+        background-position: right;
+        background-size: cover;
+    }
+
+    #nav-barre a{
+        color: white;
+    }
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="BUY-T-SHIRT.css">
+    <title>Achat t-shirt</title>
+    <style>
+        #écouter{
+            text-transform: capitalize;
+        }
+    </style>
+</head>
+<body>
+    <!--<ul>
+        <li>100% coton</li>
+        <li> livraison blablabla</li>
+    </ul>
+    <h1>Bref regarder sur site</h1>
+    <h2>Utiliser le meme style que les mini fenetre d'achat</h2>-->
+
+    <div id="disparition-nav-barre">
+        <div id="nav-barre">
+            <a href="ECOUTER.html"><h1 id="écouter">écouter</h1></a>
+            <a href="index.html"><h1>Just27</h1></a>  
+            <a href="ACHETER.html"><h1>Acheter</h1></a>    
+        </div>
+    </div>
+
+    <div id="box-box-buy">
+        <div id="box-buy">
+            <div id="div-t-shirt">
+                <img src="CR-t-shirt-noir.png" alt="CR-t-shirt-noir" id="img-t-shirt">
+            </div>
+    
+            <div id="div-formulaire">
+                <div id="titre-details-commande">
+                    <h1>Détails de la commande</h1>
+                </div>
+
+                <div id="div-form">
+                    <form action="BUY-T-SHIRT.html" method="post" id="formulaire">
+
+                        <div id="div-prenom">
+                            <label for="input-prenom">Prénom</label>
+                            <input type="text" name="prenom" id="input-prenom" placeholder="Prénom">
+                            <p id="erreur-prenom" class="invisible">Veuillez renseigner un prénom</p>
+                        </div>
+    
+                        <div id="div-size">
+                            <label for="select-size">Taille</label>
+                            <select name="size" id="select-size">
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                                <option value="XXL">XXL</option>
+                            </select>
+                        </div>
+
+                        <div id="total-prix"><p>Total | 15€</p></div>
+                        <div id="details-paiement"><p>(Paiement en liquide)</p></div>
+                        
+                        <div>
+                            <input type="submit" value="Confirmer la commande" id="btn-confirmation">
+                        </div>
+                    </form>
+                </div>
+            
+                <p style="color: red;" id="erreur"></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="deco"></div>
+    <div id="resultat_commande" class="invisible_2">
+        <p>Votre commande à été enregistrée !</p>
+        <h1 id="Attention">Attention :</h1>
+        <h1>Votre commande ne sera prise en compte qu'une fois le montant suivant rapporté à Coween ou Gabriel. (Livraison sous 5 à 9 jours)</h1>
+        <div id="div-confirmation">
+            <h1>MONTANT | 15€</h1>
+            <a href="ACHETER.html"><button id="btn-prise-en-compte">J'ai pris en compte le mode de paiement</button></a>
+        </div>
+    </div>
+
+    <div id="jesupprimemonvoisin"><div id="activation" class="invisible-div"></div></div>
+
+    <script src="BUY-T-SHIRT.js"></script>
+    <script src="test.js"></script>
+</body>
+</html>
