@@ -1,0 +1,113 @@
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+@-webkit-keyframes slide-right {
+    from{
+        -webkit-transform: translateX(-1000px);
+                transform: translateX(-1000px);
+    }
+
+    to{
+        -webkit-transform: translateX(0px);
+                transform: translateX(0px);
+    }
+    
+}
+
+@keyframes slide-right {
+    from{
+        -webkit-transform: translateX(-1000px);
+                transform: translateX(-1000px);
+    }
+
+    to{
+        -webkit-transform: translateX(0px);
+                transform: translateX(0px);
+    }
+    
+}
+
+body{
+    background-image: url(background-ecouter.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+a{
+    text-decoration: none;
+    -webkit-text-decoration-line: none;
+            text-decoration-line: none;
+}
+
+#effet-nav-barre{
+    display: block;
+    height: 200px;
+}
+
+#nav-barre{
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+}
+
+#nav-barre a{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#nav-barre a:hover{
+    color: white;
+}
+
+#nav-barre h1{
+    font-size: 30px;
+    font-family: sans-serif;
+    font-style: bold;
+}
+
+#message-avertissement{
+    /*position: fixed;*/
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#message{
+    font-size: 5em;
+    font-family: serif;
+    text-align: center;
+    margin: 0px;
+    padding: 0px 15%;
+    color: beige;
+    -webkit-animation: slide-right 1s;
+            animation: slide-right 1s;
+}
+
+@media only screen and (max-width: 900px) {
+    body{
+        background-image: url(background-ecouter-moyen.jpg);
+        background-position: right;
+        background-size: cover;
+    }
+
+    #nav-barre a{
+        color: white;
+    }
+
+    #nav-barre h1{
+        font-size: 18px;
+    }
+
+    #message{
+        font-size: 2em;
+    }
+}

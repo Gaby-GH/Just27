@@ -1,0 +1,271 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+body{
+    background-image: url(back-shop-3.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+a{
+    -webkit-text-decoration-line: none;
+            text-decoration-line: none;
+}
+
+#disparition-nav-barre{
+    display: block;
+    width: 100%;
+    height: 100px;
+}
+
+#nav-barre{
+    /*background-color: rgba(255, 255, 255, 0.1);*/
+    position: sticky;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+#nav-barre h1{
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+#nav-barre a{
+    color: rgba(255, 255, 255, 0.5);
+    -webkit-text-decoration-line: none;
+            text-decoration-line: none;
+}
+
+#nav-barre a:hover{
+    color: white;
+}
+
+#collection-1{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+#Comité-Restreint{
+    font-family: "Kanit", Verdana, Geneva, Tahoma, sans-serif;
+    /*font-family: 'Kanit', serif;*/
+    font-size: 5em;
+    color: white;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+#box-collection-1{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 80%;
+    height: auto;
+    margin-top: 15px;
+    overflow: hidden;
+}
+
+#box-collection-1 #t-shirt-noir-buy{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 15px;
+    width: 300px;
+    border-radius: 65px;
+    border: 1px solid grey;
+    background-color: rgba(255, 255, 255, 0.3);
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+
+/*#box-collection-1 #t-shirt-noir-buy:hover{
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
+    width: 45%;
+}*/
+
+#content-1{
+    width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+#img-t-shirt-noir{
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+#box-collection-1 #t-shirt-blanc-buy{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 15px;
+    width: 300px;
+    border-radius: 65px;
+    border: 1px solid grey;
+    background-color: rgba(255, 255, 255, 0.3);
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+#content-2{
+    width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+
+#img-t-shirt-blanc{
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+.btn-buy{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    /*width: 50%;*/
+    width: auto;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 980px;
+    border: 2px solid gold;
+    background-color: rgb(0, 0, 0);
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.btn-buy:hover{
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+}
+
+
+.btn-buy p{
+    color: white;
+}
+
+.prix{
+    margin: 0px;
+    padding-right: 5px;
+    padding-top: 1px;
+    font-size: large;
+    font-weight: 100;
+}
+
+.text-buy{
+    margin: 0px;
+    font-size: large;
+    font-weight: 100;
+}
+
+
+@media only screen and (max-width: 900px) {
+
+    body{
+        background-image: url(back-shop-3-vertical.jpg);
+    }
+
+    #nav-barre a{
+        color: white;
+    }
+
+    #nav-barre h1{
+        font-size: 18px;
+    }
+    
+    #box-collection-1{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+
+    #t-shirt-noir-buy{
+        margin-bottom: 60px;
+        border-radius: 15px;
+    }
+
+    #t-shirt-blanc-buy{
+        border-radius: 15px;
+    }
+
+    #Comité-Restreint{
+        text-align: center;
+        margin-bottom: 60px;
+    }
+}
